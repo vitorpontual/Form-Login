@@ -32,8 +32,8 @@ namespace FormLogin
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btLogin = new System.Windows.Forms.Button();
             this.btClose = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txLogin = new System.Windows.Forms.TextBox();
+            this.txPassword = new System.Windows.Forms.TextBox();
             this.btSignUp = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -49,6 +49,7 @@ namespace FormLogin
             this.btLogin.TabIndex = 2;
             this.btLogin.Text = "Entrar";
             this.btLogin.UseVisualStyleBackColor = false;
+            this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
             // 
             // btClose
             // 
@@ -60,20 +61,20 @@ namespace FormLogin
             this.btClose.UseVisualStyleBackColor = false;
             this.btClose.Click += new System.EventHandler(this.btClose_Click);
             // 
-            // textBox1
+            // txLogin
             // 
-            this.textBox1.Location = new System.Drawing.Point(249, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 23);
-            this.textBox1.TabIndex = 0;
+            this.txLogin.Location = new System.Drawing.Point(249, 22);
+            this.txLogin.Name = "txLogin";
+            this.txLogin.Size = new System.Drawing.Size(160, 23);
+            this.txLogin.TabIndex = 0;
             // 
-            // textBox2
+            // txPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(249, 62);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(160, 23);
-            this.textBox2.TabIndex = 1;
+            this.txPassword.Location = new System.Drawing.Point(249, 62);
+            this.txPassword.Name = "txPassword";
+            this.txPassword.PasswordChar = '*';
+            this.txPassword.Size = new System.Drawing.Size(160, 23);
+            this.txPassword.TabIndex = 1;
             // 
             // btSignUp
             // 
@@ -121,8 +122,8 @@ namespace FormLogin
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(423, 235);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txPassword);
+            this.Controls.Add(this.txLogin);
             this.Controls.Add(this.btSignUp);
             this.Controls.Add(this.btClose);
             this.Controls.Add(this.label1);
@@ -140,8 +141,8 @@ namespace FormLogin
 
         private System.Windows.Forms.Button btLogin;
         private System.Windows.Forms.Button btClose;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txLogin;
+        private System.Windows.Forms.TextBox txPassword;
         private System.Windows.Forms.Button btSignUp;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;

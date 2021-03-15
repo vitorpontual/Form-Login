@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FormLogin.Config;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,24 @@ using System.Threading.Tasks;
 
 namespace FormLogin.Model
 {
-    class Controller
+    public class Controller
     {
+        public bool have;
+        public string message = "";
+        public bool Access(string login, string password)
+        {
+            Login loginUser = new Login();
+            have = loginUser.VerifyPassword(login, password);
+            if (!loginUser.message.Equals(""))
+            {
+                this.message = loginUser.message;
+            }
+            return have;
+        }
+
+        public string SignUpUser(string email, string password, string repassword)
+        {
+            return message;
+        }
     }
 }
