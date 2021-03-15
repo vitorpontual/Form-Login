@@ -38,7 +38,7 @@ namespace FormLogin
             {
                 if (controller.have)
                 {
-                    MessageBox.Show("Sucess", "Entry", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Sucess", "Connect", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Logado welcome = new Logado();
                     welcome.Show();
                 }

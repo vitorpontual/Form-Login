@@ -29,6 +29,8 @@ namespace FormLogin.Config
                 {
                     have = true;
                 }
+                con.disconnect();
+                dr.Close();
             }
             catch (SqlException)
             {
@@ -38,8 +40,32 @@ namespace FormLogin.Config
             return have;
         }
 
-        public string SingUpUser(string email, string password, string repassword)
+        public string SingUp(string email, string password, string repassword)
         {
+            have = false;
+            if (password.Equals(repassword))
+            {
+                cmd.CommandText = "INSERT INTO _user values (@email, @password)";
+                cmd.Parameters.AddWithValue("@email", email);
+                cmd.Parameters.AddWithValue("@password", password);
+
+                try
+                {
+                    cmd.Connection = con.connect();
+                    cmd.ExecuteNonQuery();
+                    con.disconnect();
+                    this.message = "Succesful, SignUp complete";
+                    have = true;
+                }
+                catch (SqlException)
+                {
+                    this.message = "Database Internal Error!!!";
+                }
+            }
+            else
+            {
+                this.message = "Password Different!!!";
+            }
             return message;
 
         }

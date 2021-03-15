@@ -33,9 +33,9 @@ namespace FormLogin.View
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btSubmit = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txEmail = new System.Windows.Forms.TextBox();
+            this.txPassword = new System.Windows.Forms.TextBox();
+            this.txRePassword = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -43,9 +43,9 @@ namespace FormLogin.View
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(40, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 15);
+            this.label1.Size = new System.Drawing.Size(36, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Name";
+            this.label1.Text = "Email";
             // 
             // label2
             // 
@@ -70,39 +70,40 @@ namespace FormLogin.View
             this.btSubmit.Location = new System.Drawing.Point(68, 168);
             this.btSubmit.Name = "btSubmit";
             this.btSubmit.Size = new System.Drawing.Size(144, 38);
-            this.btSubmit.TabIndex = 1;
+            this.btSubmit.TabIndex = 3;
             this.btSubmit.Text = "Submit";
             this.btSubmit.UseVisualStyleBackColor = true;
+            this.btSubmit.Click += new System.EventHandler(this.btSubmit_Click);
             // 
-            // textBox1
+            // txEmail
             // 
-            this.textBox1.Location = new System.Drawing.Point(47, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 23);
-            this.textBox1.TabIndex = 2;
+            this.txEmail.Location = new System.Drawing.Point(47, 37);
+            this.txEmail.Name = "txEmail";
+            this.txEmail.Size = new System.Drawing.Size(195, 23);
+            this.txEmail.TabIndex = 0;
             // 
-            // textBox2
+            // txPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(47, 81);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(195, 23);
-            this.textBox2.TabIndex = 2;
+            this.txPassword.Location = new System.Drawing.Point(47, 81);
+            this.txPassword.Name = "txPassword";
+            this.txPassword.Size = new System.Drawing.Size(195, 23);
+            this.txPassword.TabIndex = 1;
             // 
-            // textBox3
+            // txRePassword
             // 
-            this.textBox3.Location = new System.Drawing.Point(47, 125);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(195, 23);
-            this.textBox3.TabIndex = 2;
+            this.txRePassword.Location = new System.Drawing.Point(47, 125);
+            this.txRePassword.Name = "txRePassword";
+            this.txRePassword.Size = new System.Drawing.Size(195, 23);
+            this.txRePassword.TabIndex = 2;
             // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(290, 247);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txRePassword);
+            this.Controls.Add(this.txPassword);
+            this.Controls.Add(this.txEmail);
             this.Controls.Add(this.btSubmit);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -121,8 +122,8 @@ namespace FormLogin.View
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btSubmit;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txEmail;
+        private System.Windows.Forms.TextBox txPassword;
+        private System.Windows.Forms.TextBox txRePassword;
     }
 }
