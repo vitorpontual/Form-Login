@@ -58,6 +58,7 @@ namespace FormLogin
             this.btClose.TabIndex = 3;
             this.btClose.Text = "Sair";
             this.btClose.UseVisualStyleBackColor = false;
+            this.btClose.Click += new System.EventHandler(this.btClose_Click);
             // 
             // textBox1
             // 
@@ -82,6 +83,7 @@ namespace FormLogin
             this.btSignUp.TabIndex = 4;
             this.btSignUp.Text = "Cadastrar";
             this.btSignUp.UseVisualStyleBackColor = false;
+            this.btSignUp.Click += new System.EventHandler(this.btSignUp_Click);
             // 
             // label2
             // 

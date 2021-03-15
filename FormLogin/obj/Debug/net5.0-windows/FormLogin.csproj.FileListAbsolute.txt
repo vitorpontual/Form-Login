@@ -18,3 +18,4 @@ C:\Users\vitor\Documents\Projetos C#\FormLogin\FormLogin\obj\Debug\net5.0-window
 C:\Users\vitor\Documents\Projetos C#\FormLogin\FormLogin\obj\Debug\net5.0-windows\FormLogin.pdb
 C:\Users\vitor\Documents\Projetos C#\FormLogin\FormLogin\obj\Debug\net5.0-windows\FormLogin.genruntimeconfig.cache
 C:\Users\vitor\Documents\Projetos C#\FormLogin\FormLogin\obj\Debug\net5.0-windows\FormLogin.View.SignUp.resources
+C:\Users\vitor\Documents\Projetos C#\FormLogin\FormLogin\obj\Debug\net5.0-windows\FormLogin.View.Logado.resources

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FormLogin.View;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,15 @@ namespace FormLogin
             InitializeComponent();
         }
 
-       
+        private void btSignUp_Click(object sender, EventArgs e)
+        {
+            SignUp sign = new SignUp();
+            sign.Show();
+        }
+
+        private void btClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
